@@ -1,2 +1,15 @@
-# Primer-parcial-desarrollo-web
-SportMax es una aplicación web de una tienda deportiva desarrollada con HTML, CSS y JavaScript. Implementa modularización con componentes reutilizables como header, sidebar y footer. Incluye login con validación, uso de plantillas &lt;template>, carga de productos desde JSON con Fetch API y Web Components.
+# SportMax - Tienda Deportiva
+
+Aplicación web modularizada con HTML, CSS y JavaScript.
+
+## Funcionalidades
+
+- Login con validación
+- Componentes reutilizables
+- Uso de template
+- Fetch con JSON
+- Web Components
+
+## Nota
+
+El login es educativo.

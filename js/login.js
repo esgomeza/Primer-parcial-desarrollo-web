@@ -1,10 +1,18 @@
-function login() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+const form = document.getElementById("loginForm");
 
-    if (username === 'admin' && password === 'password') {
-        alert('Inicio de sesión exitoso');
-    } else {
-        alert('Datos incorrectos');
-    }
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const usuario = document.getElementById("usuario").value;
+const password = document.getElementById("password").value;
+
+if(usuario === "admin" && password === "1234"){
+window.location.href = "index.html";
+}else{
+const error = document.getElementById("error");
+error.textContent = "Datos incorrectos";
+error.style.color = "red";
 }
+
+});
