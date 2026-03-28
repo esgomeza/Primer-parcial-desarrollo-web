@@ -1,17 +1,14 @@
 
 class ProductoCard extends HTMLElement {
 
-  /**
-   * Atributos observados: cuando cambian, se llama attributeChangedCallback.
-   */
+
   static get observedAttributes() {
     return ['nombre', 'precio', 'descripcion', 'imagen', 'categoria', 'badge'];
   }
 
   constructor() {
     super();
-    /* Crear el Shadow DOM en modo abierto */
-    this.shadow = this.attachShadow({ mode: 'open' });
+   
   }
 
   /**
@@ -212,10 +209,6 @@ class ProductoCard extends HTMLElement {
         </div>
       </div>
     `;
-
-    /* Evento del botón dentro del Shadow DOM */
-    this.shadow.getElementById('btnAgregar').addEventListener('click', () => {
-      /* Disparar evento personalizado que puede escucharse fuera del shadow */
       this.dispatchEvent(new CustomEvent('agregar-al-carrito', {
         bubbles: true,
         composed: true, // Cruza la barrera del Shadow DOM
@@ -224,7 +217,5 @@ class ProductoCard extends HTMLElement {
     });
   }
 }
-
-/* Registrar el Web Component con el nombre <producto-card> */
 customElements.define('producto-card', ProductoCard);
 
