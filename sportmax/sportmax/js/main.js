@@ -1,7 +1,7 @@
 let todosLosProductos = [];
 let carrito = [];
 
-// carga un archivo html y lo mete en el contenedor indicado
+// carga un archivo html y lo añade en el contenedor indicado
 async function cargarFragmento(idContenedor, rutaArchivo) {
   const contenedor = document.getElementById(idContenedor);
   if (!contenedor) return;
@@ -19,13 +19,13 @@ async function cargarFragmento(idContenedor, rutaArchivo) {
 // carga los tres fragmentos al mismo tiempo
 async function cargarFragmentos() {
   await Promise.all([
-    cargarFragmento('contenedor-header',  'components/header.html'),
-    cargarFragmento('contenedor-sidebar', 'components/sidebar.html'),
-    cargarFragmento('contenedor-footer',  'components/footer.html')
+    cargarFragmento('contenedor-header',  'components/header/header.html'),
+    cargarFragmento('contenedor-sidebar', 'components/sidebar/sidebar.html'),
+    cargarFragmento('contenedor-footer',  'components/footer/footer.html')
   ]);
 
   configurarSesion();
-  configurarCarrito();
+  
 }
 
 // si hay sesion guardada, muestra el nombre en el header
@@ -61,7 +61,7 @@ async function cargarProductos() {
     console.error(error);
     document.getElementById('gridProductos').innerHTML = `
       <p style="grid-column:1/-1;text-align:center;color:var(--color-gray);padding:2rem;">
-        ⚠️ Abre el proyecto con Live Server para que funcione el fetch.
+        
       </p>
     `;
   }

@@ -165,7 +165,7 @@ class ProductoCard extends HTMLElement {
       <div class="wc-card">
         <div class="wc-img">
           <img src="${imagen}" alt="${nombre}" loading="lazy">
-          <span class="wc-label">Web Component</span>
+         
           ${badge ? `<span class="wc-badge">${badge}</span>` : ''}
         </div>
         <div class="wc-info">

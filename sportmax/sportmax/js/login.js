@@ -51,12 +51,6 @@ function manejarLogin(evento) {
     inputPass.focus();
   }
 }
-
 document.addEventListener('DOMContentLoaded', () => {
-  // si ya hay sesion activa, ir directo al index
-  if (sessionStorage.getItem('sportmax_sesion')) {
-    window.location.href = 'index.html';
-    return;
-  }
   loginForm.addEventListener('submit', manejarLogin);
 });
