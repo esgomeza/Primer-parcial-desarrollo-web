@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportMax — Tienda Deportiva</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- header: se carga desde components/header.html -->
+  <div id="contenedor-header"></div>
+
+  <div class="page-wrapper">
+
+    <!-- sidebar: se carga desde components/sidebar.html -->
+    <div id="contenedor-sidebar"></div>
+
+    <main class="main-content">
+
+      <section class="hero">
+        <div class="hero-content">
+          <span class="hero-badge">🔥 Temporada 2026</span>
+          <h1>Viste Tu<br><em>Mejor</em><br>Versión</h1>
+          <p>Ropa y equipamiento deportivo de alto rendimiento para entrenar, competir y ganar.</p>
+          <a class="btn-primary" href="#productos">Ver productos ↓</a>
+        </div>
+        <div class="hero-card">
+          <div class="hero-emoji-big">🏆</div>
+          <div class="hero-tag">SPORT MAX</div>
+        </div>
+      </section>
+
+      <!-- productos renderizados con el template -->
+      <section id="productos">
+        <div class="section-header">
+          <h2 class="section-title">Productos Deportivos</h2>
+          <span class="products-count" id="conteoProductos">Cargando...</span>
+        </div>
+        <div class="products-grid" id="gridProductos"></div>
+      </section>
+
+      <!-- productos renderizados con el web component -->
+      <section style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 class="section-title">
+            Destacados
+            <span style="font-size:1rem;font-family:var(--font-body);color:var(--color-gray);font-weight:400;">
+              — Web Components
+            </span>
+          </h2>
+        </div>
+        <p style="font-size:0.85rem;color:var(--color-gray);margin-bottom:1.5rem;">
+          Estos 3 productos usan el web component
+          <code style="background:#f0ede6;padding:2px 6px;border-radius:4px;">&lt;producto-card&gt;</code>
+          con Shadow DOM. Se identifican por la etiqueta azul.
+        </p>
+        <div class="products-grid" id="gridWebComponents"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- footer: se carga desde components/footer.html -->
+  <div id="contenedor-footer"></div>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- template de producto, no se muestra en pantalla -->
+  <template id="productoTemplate">
+    <div class="product-card">
+      <div class="product-img">
+        <img src="" alt="" loading="lazy">
+        <div class="product-img-fallback">📦</div>
+        <span class="product-badge"></span>
+      </div>
+      <div class="product-info">
+        <div class="product-cat"></div>
+        <h3 class="product-name"></h3>
+        <p class="product-desc"></p>
+        <div class="product-footer">
+          <span class="product-price"></span>
+          <button class="btn-add">+ Añadir</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/producto-card.js"></script>
+  <script src="js/main.js"></script>
+  <script src="header.html"></script>
+  <script src="sidebar.html"></script>
+  <script src="footer.html"></script>
+
+</body>
+</html>
