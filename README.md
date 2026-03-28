@@ -13,3 +13,5 @@ Aplicación web modularizada con HTML, CSS y JavaScript.
 ## Nota
 
 El login es educativo.
+ACCESO:
+Usuario:admin ; contraseña:1234
