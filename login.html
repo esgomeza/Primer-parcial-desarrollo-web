@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Login - SportMax</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión — SportMax</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="login-body">
 
-<h2>SportMax - Iniciar sesión</h2>
+  <div class="login-box">
 
-<form id="loginForm">
-<input type="text" id="usuario" placeholder="Usuario" required>
-<input type="password" id="password" placeholder="Contraseña" required>
-<button type="submit">Ingresar</button>
-<p id="error"></p>
-</form>
+    <div class="login-logo">Sport<span>Max</span></div>
+    <p class="login-sub">Ingresa para continuar comprando</p>
 
-<script src="js/login.js"></script>
+    <form id="loginForm">
+
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Ej: juan"
+          autocomplete="username"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="••••••••"
+          autocomplete="current-password"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn-login-submit">Ingresar</button>
+
+      <p id="error-msg"></p>
+
+    </form>
+
+    <p class="login-footer-note">
+      Usuarios de prueba: <strong>admin1234</strong> · juan / deportes
+    </p>
+
+  </div>
+
+  <script src="js/login.js"></script>
 
 </body>
 </html>
