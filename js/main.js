@@ -1,36 +1,27 @@
-class ProductCard extends HTMLElement{
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Renderizar componentes
+  renderHeader();
+  renderFooter();
+  renderCartModal();
+  renderToast();
 
-constructor(){
-super();
-this.attachShadow({mode:"open"});
-}
+  // 2. Cargar productos desde JSON
+  cargarProductos();
 
-connectedCallback(){
-
-const name = this.getAttribute("name");
-const price = this.getAttribute("price");
-const image = this.getAttribute("image");
-
-this.shadowRoot.innerHTML = `
-<style>
-.card{
-border:1px solid #ccc;
-padding:10px;
-border-radius:10px;
-text-align:center;
-}
-img{width:100%;}
-</style>
-
-<div class="card">
-<img src="${image}">
-<h3>${name}</h3>
-<p>${price}</p>
-</div>
-`;
-
-}
-
-}
-
-customElements.define("product-card", ProductCard);
+  // 3. Revisar si hay sesión iniciada
+  const usuario = sessionStorage.getItem('sportmax_usuario');
+  if (usuario) {
+    const btnLogin = document.querySelector('.btn-login');
+    if (btnLogin) {
+      const datos = JSON.parse(usuario);
+      btnLogin.textContent = `Hola, ${datos.nombre.split(' ')[0]}`;
+      btnLogin.href = '#';
+      btnLogin.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (confirm('¿Deseas cerrar sesión?')) {
+          sessionStorage.removeItem('sportmax_usuario');
+          location.reload();
+        }
+      });
+    }
+  }
