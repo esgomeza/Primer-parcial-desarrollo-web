@@ -30,8 +30,8 @@
     "id": 4,
     "nombre": "Mancuernas Ajustables 20kg",
     "descripcion": "Sistema de ajuste rápido. Set completo de 2 a 20 kg por mancuerna.",
-    "precio": 349900,
-    "imagen": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=400&h=300&fit=crop",
+    "precio": 259000,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_627132-MLU73884400015_012024-O.webp",
     "categoria": "equipos",
     "badge": null
   },
@@ -40,7 +40,7 @@
     "nombre": "Shorts Deportivos Flow",
     "descripcion": "Tejido ligero con bolsillos con cierre. Perfecto para running y gym.",
     "precio": 49900,
-    "imagen": "https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=400&h=300&fit=crop",
+    "imagen": "https://www.sportline.com.co/media/catalog/product/f/n/fn3307-010_phsfm001-2000.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
     "categoria": "ropa",
     "badge": null
   },
@@ -48,8 +48,8 @@
     "id": 6,
     "nombre": "Raqueta de Tenis Pro 300",
     "descripcion": "Marco de fibra de carbono. Control y potencia en cada golpe.",
-    "precio": 229900,
-    "imagen": "https://images.unsplash.com/photo-1617083934551-ac1f8b0e3b9e?w=400&h=300&fit=crop",
+    "precio": 150000,
+    "imagen": "https://sportpro.com.co/cdn/shop/files/14FI300ID_01_67774432-5b0d-4855-a3f9-5f7762adb267.jpg?height=645&v=1755716513",
     "categoria": "accesorios",
     "badge": "Oferta"
   },
@@ -58,7 +58,7 @@
     "nombre": "Guantes de Boxeo Combat",
     "descripcion": "Cuero genuino con relleno de gel. Disponibles en 10, 12 y 14 oz.",
     "precio": 119900,
-    "imagen": "https://images.unsplash.com/photo-1590239926044-4131f5d0654d?w=400&h=300&fit=crop",
+    "imagen": "https://combatcorner.co/wp-content/uploads/2018/11/S-ClassRedset.jpg",
     "categoria": "equipos",
     "badge": null
   },
@@ -76,7 +76,7 @@
     "nombre": "Casco Ciclismo Aero",
     "descripcion": "Ventilación optimizada. Certificación CE. Peso ultra-ligero 240g.",
     "precio": 139900,
-    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "imagen": "https://www.cyclewear.com.co/cdn/shop/files/678c01e0-4873-4f12-ad7d-55c4f827a7f0-55cjk1gxfvvkcvrlivjnmtmbw.jpg?v=1732573791",
     "categoria": "equipos",
     "badge": "Nuevo"
   },
@@ -85,7 +85,7 @@
     "nombre": "Banda Resistencia Premium",
     "descripcion": "Set de 5 niveles. Látex natural 100%. Ideal para rehabilitación y funcional.",
     "precio": 39900,
-    "imagen": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=400&h=300&fit=crop",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_796879-MLA99945693109_112025-O.webp",
     "categoria": "accesorios",
     "badge": null
   },
