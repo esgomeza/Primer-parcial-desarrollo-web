@@ -1,0 +1,61 @@
+<!-- =========================================================
+     SportMax — Fragmento: Barra lateral
+     Archivo: components/sidebar.html
+     Cargado dinámicamente en index.html mediante fetch()
+     ========================================================= -->
+
+<aside class="site-sidebar">
+
+  <!-- Menú de categorías -->
+  <p class="sidebar-title">Categorías</p>
+  <ul class="sidebar-menu">
+    <li>
+      <a href="#" class="active" onclick="filtrarCategoria('todos', this)">
+        <span class="sidebar-icon">🏠</span> Todos
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="filtrarCategoria('calzado', this)">
+        <span class="sidebar-icon">👟</span> Calzado
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="filtrarCategoria('ropa', this)">
+        <span class="sidebar-icon">👕</span> Ropa
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="filtrarCategoria('accesorios', this)">
+        <span class="sidebar-icon">🎾</span> Accesorios
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="filtrarCategoria('equipos', this)">
+        <span class="sidebar-icon">🏋️</span> Equipos
+      </a>
+    </li>
+  </ul>
+
+  <hr class="sidebar-divider">
+
+  <!-- Menú secundario -->
+  <p class="sidebar-title">Mi cuenta</p>
+  <ul class="sidebar-menu">
+    <li>
+      <a href="login.html">
+        <span class="sidebar-icon">🔑</span> Iniciar sesión
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="sidebar-icon">❤️</span> Favoritos
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="sidebar-icon">📦</span> Mis pedidos
+      </a>
+    </li>
+  </ul>
+
+</aside>
